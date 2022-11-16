@@ -44,7 +44,7 @@
             // 
             // nudDias
             // 
-            this.nudDias.Location = new System.Drawing.Point(173, 50);
+            this.nudDias.Location = new System.Drawing.Point(121, 32);
             this.nudDias.Maximum = new decimal(new int[] {
             30,
             0,
@@ -67,16 +67,17 @@
             // 
             // txtDistancia
             // 
-            this.txtDistancia.Location = new System.Drawing.Point(173, 85);
+            this.txtDistancia.Location = new System.Drawing.Point(121, 67);
             this.txtDistancia.Name = "txtDistancia";
             this.txtDistancia.Size = new System.Drawing.Size(70, 20);
             this.txtDistancia.TabIndex = 1;
             this.txtDistancia.TextChanged += new System.EventHandler(this.txtDistancia_TextChanged);
+            this.txtDistancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDistancia_KeyPress);
             // 
             // lblDias
             // 
             this.lblDias.AutoSize = true;
-            this.lblDias.Location = new System.Drawing.Point(137, 52);
+            this.lblDias.Location = new System.Drawing.Point(85, 34);
             this.lblDias.Name = "lblDias";
             this.lblDias.Size = new System.Drawing.Size(30, 13);
             this.lblDias.TabIndex = 2;
@@ -85,7 +86,7 @@
             // lblDistancia
             // 
             this.lblDistancia.AutoSize = true;
-            this.lblDistancia.Location = new System.Drawing.Point(116, 88);
+            this.lblDistancia.Location = new System.Drawing.Point(64, 70);
             this.lblDistancia.Name = "lblDistancia";
             this.lblDistancia.Size = new System.Drawing.Size(51, 13);
             this.lblDistancia.TabIndex = 3;
@@ -94,7 +95,7 @@
             // lblKm
             // 
             this.lblKm.AutoSize = true;
-            this.lblKm.Location = new System.Drawing.Point(243, 88);
+            this.lblKm.Location = new System.Drawing.Point(191, 70);
             this.lblKm.Name = "lblKm";
             this.lblKm.Size = new System.Drawing.Size(21, 13);
             this.lblKm.TabIndex = 4;
@@ -106,7 +107,7 @@
             this.mrcCosto.Controls.Add(this.lblPrecioKm);
             this.mrcCosto.Controls.Add(this.txtTotal);
             this.mrcCosto.Controls.Add(this.txtPrecioKm);
-            this.mrcCosto.Location = new System.Drawing.Point(64, 158);
+            this.mrcCosto.Location = new System.Drawing.Point(12, 103);
             this.mrcCosto.Name = "mrcCosto";
             this.mrcCosto.Size = new System.Drawing.Size(264, 106);
             this.mrcCosto.TabIndex = 5;
@@ -135,6 +136,7 @@
             // 
             this.txtTotal.Location = new System.Drawing.Point(109, 51);
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(70, 20);
             this.txtTotal.TabIndex = 8;
             // 
@@ -142,6 +144,7 @@
             // 
             this.txtPrecioKm.Location = new System.Drawing.Point(109, 25);
             this.txtPrecioKm.Name = "txtPrecioKm";
+            this.txtPrecioKm.ReadOnly = true;
             this.txtPrecioKm.Size = new System.Drawing.Size(70, 20);
             this.txtPrecioKm.TabIndex = 6;
             // 
@@ -149,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 365);
+            this.ClientSize = new System.Drawing.Size(286, 223);
             this.Controls.Add(this.mrcCosto);
             this.Controls.Add(this.lblKm);
             this.Controls.Add(this.lblDistancia);

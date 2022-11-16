@@ -64,5 +64,13 @@ namespace pryComettoSP2_2
                 txtTotal.Text = "";
             }
         }
+
+        private void txtDistancia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
