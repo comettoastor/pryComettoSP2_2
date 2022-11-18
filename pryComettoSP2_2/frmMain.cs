@@ -25,13 +25,13 @@ namespace pryComettoSP2_2
                 if (int.Parse(txtDistancia.Text) >= 100 && nudDias.Value >= 7)
                 {
                     precioTotal = precioTotal * 0.5f;
-                    txtTotal.Text = precioTotal.ToString();
-                    txtPrecioKm.Text = "2,5";
+                    txtTotal.Text = "$" + precioTotal.ToString();
+                    txtPrecioKm.Text = "$2,5";
                 }
                 else
                 {
-                    txtTotal.Text = precioTotal.ToString();
-                    txtPrecioKm.Text = "5";
+                    txtTotal.Text = "$" + precioTotal.ToString();
+                    txtPrecioKm.Text = "$5";
                 }         
             }
             else
@@ -49,13 +49,13 @@ namespace pryComettoSP2_2
                 if (int.Parse(txtDistancia.Text) >= 100 && nudDias.Value >= 7)
                 {
                     precioTotal = precioTotal * 0.5;
-                    txtTotal.Text = precioTotal.ToString();
-                    txtPrecioKm.Text = "2,5";
+                    txtTotal.Text = "$" + precioTotal.ToString();
+                    txtPrecioKm.Text = "$2,5";
                 }
                 else
                 {
-                    txtTotal.Text = precioTotal.ToString();
-                    txtPrecioKm.Text = "5";
+                    txtTotal.Text = "$" + precioTotal.ToString();
+                    txtPrecioKm.Text = "$5";
                 }
             }
             else

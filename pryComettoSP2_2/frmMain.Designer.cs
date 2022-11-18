@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.nudDias = new System.Windows.Forms.NumericUpDown();
             this.txtDistancia = new System.Windows.Forms.TextBox();
             this.lblDias = new System.Windows.Forms.Label();
@@ -159,8 +160,9 @@
             this.Controls.Add(this.lblDias);
             this.Controls.Add(this.txtDistancia);
             this.Controls.Add(this.nudDias);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
-            this.Text = "Ferrocarriles Atlántico-Pacífico";
+            this.Text = "Gestión - Ferro";
             ((System.ComponentModel.ISupportInitialize)(this.nudDias)).EndInit();
             this.mrcCosto.ResumeLayout(false);
             this.mrcCosto.PerformLayout();
